@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sen-Eye</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link href="https://fonts.cdnfonts.com/css/gluten" rel="stylesheet">
+    <script src="assets/JS/main.js"></script>
+</head>
+
+<body>
+    <img src="assets/img/fundo_cima.webp" alt="Fundo" class="background-image">
+    <div id="content">
+        <nav class="navbar">
+            <div class="div-esquerda">
+                <img src="assets/img/logo.webp" alt="Logo" width="150px">
+            </div>
+            <div class="div-meio">
+                <ul>
+                    <li>
+                        <a href="#">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Objetivo</a>
+                    </li>
+                    <li>
+                        <a href="#">Problema</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">APP</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="info">
+            <div class="itens-info">
+                <h1 style="font-family: 'Gluten', sans-serif;">SEN.EYE</h1>
+                <h2>Um aplicativo de Monitoramento de Catástrofes
+                    Naturais e Análises Climáticas.</h2>
+                <a class="btn-saiba_mais" href="#">Saiba mais</a>
+            </div>
+        </div>
+
+        <div class="sobre-app">
+            <div class="itens-sobre_app">
+                <div class="itens-sobre-esquerda">
+                    <img src="assets/img/terra-cuidar.webp" alt="Terra">
+                </div>
+                <div class="itens-sobre-direita">
+                    <h1>Sobre</h1>
+                    <h3>A <span class="sobre-colors">SEN.AI</span> desenvolveu um <span
+                            class="sobre-colors">aplicativo</span>
+                        para <span class="sobre-colors">Smonitorar catástrofes ambientais</span> e <span
+                            class="sobre-colors">analisar o clima</span> em todo o
+                        <span class="sobre-colors">Brasil</span>, em parceria com órgãos federais, o INPE e o setor
+                        privado. Este projeto visa melhorar a
+                        <span class="sobre-colors">prevenção de desastres</span> e a <span class="sobre-colors">Sugestão
+                            de riscos ambientais</span> em diversas regiões do país.
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="objetivos-app">
+            <div class="objetivos-itens">
+                <div class="objetivo">
+                    <img src="assets/img/objetivo1.webp" alt="Terra previsão">
+                    <h4>Realizar previsão do tempo</h4>
+                </div>
+                <div class="objetivo">
+                    <img src="assets/img/objetivo2.webp" alt="Detectar enchentes">
+                    <h4>Detectar enchentes</h4>
+                </div>
+                <div class="objetivo">
+                    <img src="assets/img/objetivo3.webp" alt="Detectar inundações">
+                    <h4>Detectar inundações</h4>
+                </div>
+                <div class="objetivo">
+                    <img src="assets/img/objetivo4.webp" alt="Detectar rompimentos">
+                    <h4>Detectar rompimentos de barragens</h4>
+                </div>
+                <div class="objetivo">
+                    <img src="assets/img/objetivo5.webp" alt="Detectar queimadas">
+                    <h4>Detectar queimadas em reservas</h4>
+                </div>
+                <div class="objetivo">
+                    <img src="assets/img/objetivo6.webp" alt="Emitir alertas">
+                    <h4>Emitir alertas</h4>
+                </div>
+                <div class="objetivo">
+                    <img src="assets/img/objetivo7.webp" alt="Detectar e ajudar nos resgates">
+                    <h4>Detectar e ajudar nos resgates</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="ntc">
+            <div class="ntc-itens">
+                <div class="ntc-itens-esquerda">
+                    <h1>Segundos que Salvam Vidas</h1>
+                    <h3>O Brasil registrou o maior número de desastres naturais em 2023, segundo dados apresentados pelo
+                        Centro
+                        Nacional de Monitoramento e Alertas de Desastres Naturais (Cemaden). Foram registrados 1.161
+                        eventos
+                        de
+                        desastres, sendo 716 associados a eventos hidrológicos, como transbordamento de rios, e 445 de
+                        origem
+                        geológica, como deslizamentos de terra. Na média, foram registrados pelo menos três desastres
+                        por
+                        dia. O
+                        número supera os registros de 2022 e 2020.</h3>
+                    <a class="btn-salvam_vidas" href="#">Informe-se mais</a>
+                </div>
+                <div class="ntc-itens-direita">
+                    <img src="assets/img/lixo.webp" alt="Transbordamento de Rios">
+                </div>
+            </div>
+        </div>
+
+        <div id="faq-sen">
+            <div class="faq-container">
+                <h1>Perguntas Frequentes</h1>
+                <div class="faq-item" onclick="toggleFAQ(0)">
+                    <div class="faq-question">Como o SEN-Eye detecta desastres naturais?</div>
+                    <div class="faq-answer">O SEN-Eye utiliza imagens de satélite avançadas e algoritmos de machine
+                        learning para monitorar constantemente sinais de possíveis desastres naturais como enchentes,
+                        inundações, rompimentos de barragens e queimadas. O aplicativo analisa padrões meteorológicos e
+                        alterações no terreno para detectar ameaças em tempo real e emitir alertas precisos.</div>
+                </div>
+                <div class="faq-item" onclick="toggleFAQ(1)">
+                    <div class="faq-question">O aplicativo funciona offline?</div>
+                    <div class="faq-answer">Funcionalidades offline são limitadas. A conexão à internet é necessária
+                        para atualizações e alertas em tempo real.
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFAQ(1)">
+                    <div class="faq-question">Quais tipos de alertas o SEN-Eye pode emitir?</div>
+                    <div class="faq-answer">Emitimos alertas para enchentes, inundações, rompimentos de barragem,
+                        queimadas e condições climáticas extremas.
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFAQ(1)">
+                    <div class="faq-question">O SEN-Eye está disponível em quais plataformas?</div>
+                    <div class="faq-answer">
+                        Disponível para Android e iOS.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="donwloads">
+            <div class="download-itens">
+                <div class="download-itens-esquerda">
+                    <a href="/" tabIndex="0">
+                        <img class="bn45"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png"
+                            alt="bn45" />
+                    </a>
+                    <a href="/" tabIndex="0">
+                        <img class="bn46"
+                            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                            alt="bn45" />
+                    </a>
+                </div>
+                <div class="donwload-itens-direita">
+                    <h1>Baixe nosso aplicativo agora mesmo!!</h1>
+                </div>
+            </div>
+            <img src="assets/img/nuvem.webp" alt="Nuvem" class="nuvem nuvem-esquerda-cima" width="250px">
+            <img src="assets/img/nuvem.webp" alt="Nuvem" class="nuvem nuvem-direita-meio" width="250px">
+            <img src="assets/img/nuvem.webp" alt="Nuvem" class="nuvem nuvem-direita-baixo" width="250px">
+        </div>
+
+        <div id="footer-container">
+            <footer>
+                <div class="esquerda">
+                    <img src="assets/img/logo2.webp" alt="Mascote Rigrover" class="img-footer-logo" width="300px">
+                    <h4>Na sombra do caos, <span class="span-orange">ressurge</span> a força humana.</h4>
+                    <div class="figma-div-alin">
+                        <h4>Acesse nosso projeto</h4>
+                        <img src="assets/img/figma.webp" class="figma" alt="Figma" width="200px">
+                    </div>
+                </div>
+                <div class="meio">
+                    <div class="table-meio">
+                        <h4>Termos</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Políticas de Privacidade</a>
+                            </li>
+                            <li>
+                                <a href="#">Termos e condições</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="direita">
+                    <h4>Contato</h4>
+                    <a href="#">contatosen.ai2024@gmail.com</a>
+                    <div class="imagens-contato">
+                        <img src="assets/img/instagram.webp" alt="Instagram" width="30px">
+                        <img src="assets/img/facebook.webp" alt="Facebook" width="30px">
+                        <img src="assets/img/twitter.webp" alt="Twitter" width="30px">
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <img src="assets/img/fundo_baixo.webp" alt="Fundo" class="background-image2">
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

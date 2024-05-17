@@ -1,0 +1,28 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFF2DE;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+p, h4, h3, h2 {
+    font-size: 19px;
+    width: 92rem;
+    margin: 10px;
+}
+
+.voltar {
+    background-color: #1f6597;
+    border: none;
+    color: white;
+    margin: 10px;
+    width: 6vw;
+    height: 2vw;
+    font-size: 21px;
+    border-radius: 7px;
+    text-decoration-line: none;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}

@@ -7,6 +7,9 @@
     <title>Sen-Eye</title>
     <link rel="stylesheet" href="assets/CSS/style.css">
     <link href="https://fonts.cdnfonts.com/css/gluten" rel="stylesheet">
+
+    <link rel="shortcut icon" type="imagex/png" href="assets\img\logo.webp">
+
     <script src="assets/JS/main.js"></script>
 </head>
 
@@ -15,27 +18,29 @@
     <div id="content">
         <nav class="navbar">
             <div class="div-esquerda">
-                <img src="assets/img/logo.webp" alt="Logo" width="150px">
+                <a href="index.html">
+                <img src="assets/img/logo.webp" alt="Logo" width="100">
+                </a>
             </div>
             <div class="div-meio">
                 <ul>
                     <li>
-                        <a href="#">Início</a>
+                        <a href="index.html">Início</a>
                     </li>
                     <li>
-                        <a href="#">Sobre</a>
+                        <a href="#sobre-id">Sobre</a>
                     </li>
                     <li>
-                        <a href="#">Objetivo</a>
+                        <a href="#objetivo-id">Objetivo</a>
                     </li>
                     <li>
-                        <a href="#">Problema</a>
+                        <a href="#problema-id">Problema</a>
                     </li>
                     <li>
-                        <a href="#">FAQ</a>
+                        <a href="#faq-sen">FAQ</a>
                     </li>
                     <li>
-                        <a href="#">APP</a>
+                        <a href="#baixe-id">APP</a>
                     </li>
                 </ul>
             </div>
@@ -46,7 +51,7 @@
                 <h1 style="font-family: 'Gluten', sans-serif;">SEN.EYE</h1>
                 <h2>Um aplicativo de Monitoramento de Catástrofes
                     Naturais e Análises Climáticas.</h2>
-                <a class="btn-saiba_mais" href="#">Saiba mais</a>
+                <a class="btn-saiba_mais" href="#sobre-id">Saiba mais</a>
             </div>
         </div>
 
@@ -55,10 +60,10 @@
                 <div class="itens-sobre-esquerda">
                     <img src="assets/img/terra-cuidar.webp" alt="Terra">
                 </div>
-                <div class="itens-sobre-direita">
+                <div class="itens-sobre-direita" id="sobre-id">
                     <h1>Sobre</h1>
                     <h3>A <span class="sobre-colors">SEN.AI</span> desenvolveu um <span
-                            class="sobre-colors">aplicativo</span>
+                            class="sobre-colors">aplicativo</span> chamado <span class="sobre-colors">SEN.EYE</span>
                         para <span class="sobre-colors">Smonitorar catástrofes ambientais</span> e <span
                             class="sobre-colors">analisar o clima</span> em todo o
                         <span class="sobre-colors">Brasil</span>, em parceria com órgãos federais, o INPE e o setor
@@ -70,7 +75,7 @@
             </div>
         </div>
 
-        <div class="objetivos-app">
+        <div class="objetivos-app"  id="objetivo-id">
             <div class="objetivos-itens">
                 <div class="objetivo">
                     <img src="assets/img/objetivo1.webp" alt="Terra previsão">
@@ -103,7 +108,7 @@
             </div>
         </div>
 
-        <div class="ntc">
+        <div class="ntc" id="problema-id">
             <div class="ntc-itens">
                 <div class="ntc-itens-esquerda">
                     <h1>Segundos que Salvam Vidas</h1>
@@ -118,7 +123,7 @@
                         por
                         dia. O
                         número supera os registros de 2022 e 2020.</h3>
-                    <a class="btn-salvam_vidas" href="#">Informe-se mais</a>
+                    <a class="btn-salvam_vidas" href="https://www.cnnbrasil.com.br/nacional/brasil-registrou-mais-de-mil-desastres-naturais-em-2023-segundo-o-cemaden/">Informe-se mais</a>
                 </div>
                 <div class="ntc-itens-direita">
                     <img src="assets/img/lixo.webp" alt="Transbordamento de Rios">
@@ -131,10 +136,9 @@
                 <h1>Perguntas Frequentes</h1>
                 <div class="faq-item" onclick="toggleFAQ(0)">
                     <div class="faq-question">Como o SEN-Eye detecta desastres naturais?</div>
-                    <div class="faq-answer">O SEN-Eye utiliza imagens de satélite avançadas e algoritmos de machine
-                        learning para monitorar constantemente sinais de possíveis desastres naturais como enchentes,
-                        inundações, rompimentos de barragens e queimadas. O aplicativo analisa padrões meteorológicos e
-                        alterações no terreno para detectar ameaças em tempo real e emitir alertas precisos.</div>
+                    <div class="faq-answer">O SEN-Eye utiliza imagens de satélite avançadas e algoritmos
+                         de machine learning para monitorar sinais de possíveis desastres naturais como 
+                         enchentes, rompimentos de barragens e queimadas. O aplicativo analisa padrões meteor</div>
                 </div>
                 <div class="faq-item" onclick="toggleFAQ(1)">
                     <div class="faq-question">O aplicativo funciona offline?</div>
@@ -158,19 +162,29 @@
             </div>
         </div>
 
-        <div class="donwloads">
+        <div class="donwloads" id="baixe-id">
             <div class="download-itens">
                 <div class="download-itens-esquerda">
-                    <a href="/" tabIndex="0">
+                    <a tabIndex="0" id="botaoplay">
                         <img class="bn45"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png"
                             alt="bn45" />
                     </a>
-                    <a href="/" tabIndex="0">
+                    <a  tabIndex="0" id="botaoaple">
                         <img class="bn46"
                             src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                             alt="bn45" />
                     </a>
+
+                    <script>
+                        document.getElementById('botaoplay').addEventListener('click', function() {
+                            window.open('https://play.google.com/store/games?hl=pt_BR&gl=US', '_blank');
+                        });
+
+                        document.getElementById('botaoaple').addEventListener('click', function() {
+                            window.open('https://www.apple.com/br/store?afid=p238%7CsC7KKNBEq-dc_mtid_1870765e38482_pcrid_699465943161_pgrid_17049243658_pntwk_g_pchan__pexid__ptid_kwd-12522920_&cid=aos-br-kwgo-brand--slid---product-', '_blank');
+                        });
+                    </script>
                 </div>
                 <div class="donwload-itens-direita">
                     <h1>Baixe nosso aplicativo agora mesmo!!</h1>
@@ -187,8 +201,13 @@
                     <img src="assets/img/logo2.webp" alt="Mascote Rigrover" class="img-footer-logo" width="300px">
                     <h4>Na sombra do caos, <span class="span-orange">ressurge</span> a força humana.</h4>
                     <div class="figma-div-alin">
-                        <h4>Acesse nosso projeto</h4>
-                        <img src="assets/img/figma.webp" class="figma" alt="Figma" width="200px">
+                        <img src="assets/img/figma.webp" class="figma" alt="Figma" width="300px" id="figmaview">
+
+                        <script>
+                            document.getElementById('figmaview').addEventListener('click', function() {
+                                window.open('https://www.figma.com/design/VsGkX34ZJo8VfTBy4GpKk6/SEN.EYE?node-id=0%3A1&t=WUfli5gD6fVCrXCn-1', '_blank');
+                            });
+                        </script>
                     </div>
                 </div>
                 <div class="meio">
@@ -196,26 +215,55 @@
                         <h4>Termos</h4>
                         <ul>
                             <li>
-                                <a href="#">Políticas de Privacidade</a>
+                                <a id="politicasdep">Políticas de Privacidade</a>
                             </li>
                             <li>
-                                <a href="#">Termos e condições</a>
+                                <a id="termosec">Termos e condições</a>
                             </li>
                         </ul>
+
+                        <script>
+                            document.getElementById('politicasdep').addEventListener('click', function() {
+                                window.open('PolíticasdeP.html', '_blank');
+                            });
+    
+                            document.getElementById('termosec').addEventListener('click', function() {
+                                window.open('TermoseC.html', '_blank');
+                            });
+                        </script>
                     </div>
                 </div>
                 <div class="direita">
                     <h4>Contato</h4>
-                    <a href="#">contatosen.ai2024@gmail.com</a>
+                    <a href="mailto:contatosen.ai2024@gmail.com">contatosen.ai2024@gmail.com</a>
                     <div class="imagens-contato">
-                        <img src="assets/img/instagram.webp" alt="Instagram" width="30px">
-                        <img src="assets/img/facebook.webp" alt="Facebook" width="30px">
-                        <img src="assets/img/twitter.webp" alt="Twitter" width="30px">
+                        <a>
+                        <img src="assets/img/instagram.webp" alt="Instagram" width="40px" id="instagramconta">
+                        </a>
+                        <a>
+                            <img src="assets/img/facebook.webp" alt="Facebook" width="40px" id="faceconta">
+                         </a>
+                        <a> 
+                            <img src="assets/img/twitter.webp" alt="Twitter" width="50px" id="twitterconta">
+                         </a>
+                         <script>
+                            document.getElementById('instagramconta').addEventListener('click', function() {
+                                window.open('https://www.instagram.com/sen.ai2024/', '_blank');
+                            });
+    
+                            document.getElementById('twitterconta').addEventListener('click', function() {
+                                window.open('https://twitter.com/oSen_AI', '_blank');
+                            });
+
+                            document.getElementById('faceconta').addEventListener('click', function() {
+                                window.open('https://www.facebook.com/profile.php?id=61559540488684', '_blank');
+                            });
+                        </script>
                     </div>
                 </div>
             </footer>
         </div>
-        <img src="assets/img/fundo_baixo.webp" alt="Fundo" class="background-image2">
+        <img src="assets/img/fundo_baixo.png    " alt="Fundo" class="background-image2">
     </div>
     </div>
     </div>

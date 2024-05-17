@@ -108,12 +108,17 @@ h2 {
     width: 700px;
 }
 
+.info h1 {
+    font-size: 3vw;
+}
+
 .info {
     display: flex;
     justify-content: flex-end;
 }
 
 .itens-info {
+    MARGIN: 5VW;
     flex-direction: column;
 }
 
@@ -121,7 +126,7 @@ h2 {
     display: flex;
     align-items: center;
     color: black;
-    padding-top: 400px;
+    padding-top: 19vw;
     margin: 100px;
 }
 
@@ -132,19 +137,22 @@ h2 {
 .itens-sobre-esquerda img {
     width: 400px;
     height: auto;
+    margin: 0 24px 0 0;
 }
 
 .itens-sobre_app {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 auto;
 }
 
-.itens-sobre_app h1,
-.itens-sobre_app h3 {
+.itens-sobre_app h1, .itens-sobre_app h3 {
     margin: 0;
     padding: 10px;
-    width: 800px;
+    width: 34vw;
+    text-align: justify;
+    font-size: 21px;
 }
 
 .sobre-colors {
@@ -155,34 +163,32 @@ h2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    width: 73rem;
+    margin: 0 auto;
+}
+
+div#objetivo-id {
+    margin: 8vw;
 }
 
 .objetivo {
     background-color: #A8CFD4;
     text-align: center;
-    padding: 20px;
     color: white;
     border-radius: 15px;
-    margin: 30px;
+    width: 18vw;
     align-items: center;
     transition: 0.3s;
 }
 
 .objetivo img {
-    width: 140px;
-    height: 160px;
+    width: 135px;
+    height: 138px;
+    margin-top: 22px;
 }
 
 .objetivo h4 {
     margin-top: 10px;
-}
-
-.objetivo:hover {
-    scale: 105%;
-    transition: 0.3s;
-    background-color: #b2d7dc;
-    cursor: pointer;
-    font-size: 1.2rem;
 }
 
 .objetivos-itens::after {
@@ -196,7 +202,7 @@ h2 {
 
 .ntc {
     background-color: #A8CFD4;
-    text-align: center;
+    text-align: justify;
     padding: 70px;
     color: white;
     border-radius: 15px;
@@ -215,25 +221,22 @@ h2 {
     width: 100%;
 }
 
+
 .ntc-itens-esquerda {
-    flex: 1;
-    padding-right: 20px;
+    flex: 0;
+    padding-right: 4vw;
 }
 
 .ntc-itens-direita img {
-    max-width: 600px;
-    height: auto;
+    max-width: 40rem;
+    height: 37rem;
     border-top-right-radius: 40px;
     border-bottom-left-radius: 40px;
-    margin-top: -100px;
-    transition: 0.3s;
-
-}
-
-.ntc-itens-direita img:hover {
-    scale: 105%;
+    margin-top: -109px;
     transition: 0.3s;
 }
+
+
 
 .btn-salvam_vidas {
     background-color: white;
@@ -271,12 +274,17 @@ h2 {
 
 .ntc-itens-esquerda h1 {
     color: #1C4C50;
+    font-size: 2.9vw;
+    width: 32vw;
+    margin: 0;
 }
 
 .ntc-itens-esquerda h3 {
-    color: #0B2729;
-    width: 600px;
+    color: rgb(11, 39, 41);
+    width: 37vw;
     height: auto;
+    font-size: 21px;
+    margin: 40px 0px;
 }
 
 #faq-sen {
@@ -330,7 +338,6 @@ h2 {
 }
 
 .faq-item {
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
@@ -344,34 +351,31 @@ h2 {
     border: 1px solid black;
     padding: 20px;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     user-select: none;
     border-radius: 15px;
-    background-image: url('../img/arrow_down.png');
+    background-image: url(../img/arrow_down.png);
     background-repeat: no-repeat;
     background-size: 20px;
     background-position: right 20px center;
     padding-left: 20px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .faq-question:hover {
-    scale: 105%;
+    scale: 102%;
     transition: 0.3s;
 }
 
 .faq-answer {
     color: #ffffff;
     line-height: 1.5;
-    font-size: 19px;
+    font-size: 1.2rem;
     transition: all 0.3s ease;
     transition: 0.3s;
 }
 
-.faq-answer:hover {
-    scale: 105%;
-    transition: 0.3s;
-}
 
 .faq-answer.collapsing {
     transition: height 0.3s ease;
@@ -388,7 +392,6 @@ h2 {
 
 .faq-item {
     margin-bottom: 10px;
-    cursor: pointer;
 }
 
 .faq-answer {
@@ -402,7 +405,7 @@ h2 {
 }
 
 .bn45 {
-    width: 270px;
+    width: 22vw;
     transition: 0.3s;
 }
 
@@ -417,7 +420,7 @@ h2 {
 }
 
 .bn46 {
-    width: 272px;
+    width: 22vw;
     transition: 0.3s;
     height: 160px;
 }
@@ -439,6 +442,7 @@ h2 {
 .download-itens {
     display: flex;
     align-items: center;
+    
 }
 
 .download-itens-esquerda {
@@ -449,6 +453,7 @@ h2 {
 
 .download-itens-esquerda a {
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .donwload-itens-direita {
@@ -456,8 +461,9 @@ h2 {
 }
 
 .donwload-itens-direita h1 {
-    color: black;
-    padding: 40px;
+    padding: 50px;
+    font-size: 3vw;
+    color: #072326;
 }
 
 
@@ -479,17 +485,27 @@ footer {
 }
 
 .meio {
-    width: 33%;
+    width: 35%;
     color: black;
-    padding-left: 225px;
+    padding-left: 215px;
     font-size: 1.25rem;
 }
 
+.meio li {
+    margin: 0 0 17px 0;
+    width: 15vw;
+}
+
+.meio a {
+    color: black;
+    cursor: pointer;
+}
+
 .direita {
-    width: 33%;
+    width: 45%;
     color: black;
     padding-left: 200px;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
 }
 
 .figma {

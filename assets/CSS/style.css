@@ -168,17 +168,19 @@ h2 {
 }
 
 div#objetivo-id {
-    margin: 8vw;
+    margin: 0 0 0 6vw;
 }
 
 .objetivo {
     background-color: #A8CFD4;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 15px;
     width: 18vw;
     align-items: center;
     transition: 0.3s;
+    -webkit-box-shadow: 11px 1px 19px 2px rgba(0,0,0,0.13); 
+    box-shadow: 11px 1px 19px 2px rgba(0,0,0,0.13);
 }
 
 .objetivo img {
@@ -189,7 +191,11 @@ div#objetivo-id {
 
 .objetivo h4 {
     margin-top: 10px;
+    width: 17vw;
+    font-size: 14px;
 }
+
+
 
 .objetivos-itens::after {
     content: "";
@@ -588,4 +594,12 @@ footer {
 
 .nuvem-direita-baixo  {
     margin-top: 250px;
+}
+
+.icon {
+    display: none;
+}
+
+    #myLinks {
+    display: none;
 }
